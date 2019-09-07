@@ -1,28 +1,79 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Plane : MonoBehaviour
 {
-    private float xLeft = 0f;
-    private float xRight = 8f;
-    private float yTop = 4.5f;
-    private float yBot = 0.5f;
-    [SerializeField] private GameObject planePrefab;
-    private GameObject currentPlane;
-    private Vector3 currentPosition;
+    [SerializeField] private float minSpeed = 0.2f;
+    [SerializeField] private float maxSpeed = 0.4f;
 
-    void Update()
+    public float Speed => speed;
+    private float speed;
+
+    delegate void MovementStrategy();
+
+    private MovementStrategy movementStrategy;
+
+
+    void Start()
     {
-        if (!currentPlane)
+        speed = Random.Range(minSpeed, maxSpeed);
+
+        var myTrajectory = (Trajectories)Random.Range(0, 3);
+
+        switch (myTrajectory)
         {
-            CreatePlane();
+            case Trajectories.LINE:
+                movementStrategy = MoveLinear;
+                break;
+            case Trajectories.SQUARE:
+                movementStrategy = MoveSquare;
+                break;
+            case Trajectories.SIN:
+                movementStrategy = MoveSin;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
+
     }
 
-    void CreatePlane()
+    // Update is called once per frame
+    void Update()
     {
-        currentPosition = new Vector3(Random.Range(xLeft, xRight), Random.Range(yBot, yTop), 0);
-        currentPlane = GameObject.Instantiate(planePrefab, currentPosition, Quaternion.identity);
+        movementStrategy();
+    }
+
+    private void MoveLinear()
+    {
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+    }
+
+    private void MoveSquare()
+    {
+        Vector3 delta = Vector3.left * speed;
+
+        Vector3 velocity = new Vector3(delta.x, delta.x * delta.x, delta.z);
+
+        transform.position += velocity * Time.deltaTime;
+    }
+
+    private void MoveSin()
+    {
+        Vector3 velocity = new Vector3(-1, Mathf.Sin(Time.timeSinceLevelLoad), 0).normalized;
+
+        transform.position += velocity * Time.deltaTime * speed;
+    }
+
+    enum Trajectories
+    {
+        LINE,
+        SQUARE,
+        SIN
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Destroy(gameObject);
     }
 }
