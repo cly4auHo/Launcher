@@ -163,7 +163,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -336,11 +336,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710050572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -20, z: 0}
+  m_LocalPosition: {x: 0.7, y: -0.5, z: 0}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815675106
 GameObject:
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 815675108}
   - component: {fileID: 815675107}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -393,8 +393,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815675106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8578252, y: 6.0411177, z: 2.5273438}
-  m_LocalScale: {x: 22.076248, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 20, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 841985436}
   m_RootOrder: 0
@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841985435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8578252, y: 1.3988824, z: -2.5273438}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 815675108}
@@ -431,7 +431,7 @@ Transform:
   - {fileID: 1370563763}
   - {fileID: 974720452}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &974720450
 GameObject:
@@ -444,7 +444,7 @@ GameObject:
   - component: {fileID: 974720452}
   - component: {fileID: 974720451}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,8 +484,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974720450}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 10.3821745, y: -1.3388824, z: 2.5273438}
-  m_LocalScale: {x: 10.762175, y: 1, z: 1}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 841985436}
   m_RootOrder: 3
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 986634187}
   - component: {fileID: 986634186}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,8 +541,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986634185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8578252, y: -8.188883, z: 2.5273438}
-  m_LocalScale: {x: 22.076248, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalScale: {x: 20, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 841985436}
   m_RootOrder: 1
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 1370563763}
   - component: {fileID: 1370563762}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -598,8 +598,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370563761}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -13.907825, y: -1.2288824, z: 2.5273438}
-  m_LocalScale: {x: 10.762175, y: 1, z: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 841985436}
   m_RootOrder: 2
@@ -614,10 +614,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1846975100}
   - component: {fileID: 1846975099}
-  - component: {fileID: 1846975101}
   - component: {fileID: 1846975102}
+  - component: {fileID: 1846975101}
   m_Layer: 0
-  m_Name: Rocket_Launcher
+  m_Name: RocketLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,7 +684,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1846975101
 MonoBehaviour:
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846975098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66940f317c50f2b4088a9d9ca1128c98, type: 3}
+  m_Script: {fileID: 11500000, guid: 11cca15185e4e4440954f0351b08fded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rocketPrefab: {fileID: 7067418283303164035, guid: e873a56f1e0c56143a479b940ffc2e1c,

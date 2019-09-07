@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8740211090883361404}
   - component: {fileID: 8740211090883361407}
   - component: {fileID: 8740211090883361406}
-  - component: {fileID: 5716803110772932866}
+  - component: {fileID: 7769460401127693353}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Plane
@@ -130,7 +130,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.09, y: 2.42}
   m_EdgeRadius: 0
---- !u!114 &5716803110772932866
+--- !u!114 &7769460401127693353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8740211090883361395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd786e377be147e47aaa36aecc23e0d8, type: 3}
+  m_Script: {fileID: 11500000, guid: bca1dbd5305659d45b59daa8e4c539a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minSpeed: 0.2

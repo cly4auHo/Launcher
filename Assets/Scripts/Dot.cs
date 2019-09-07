@@ -3,18 +3,9 @@
 public class Dot : MonoBehaviour
 {
     [SerializeField] private RocketLauncher rocketLauncher;
-    private const float RocketSpeed = 1f;
-    private float targetSpeed;
-    private Vector3 targetPosition;
-    private Vector3 rocketPosition = Vector3.zero;
+    private const float RocketSpeed = 1f;      
     private const string PlaneTag = "Plane";
-
-
-    void Start()
-    {
-
-    }
-
+ 
     void Update()
     {
         var target = GameObject.FindGameObjectWithTag(PlaneTag)?.GetComponent<Plane>();

@@ -3,8 +3,7 @@
 public class RocketLauncher : MonoBehaviour
 {
     [SerializeField] private GameObject rocketPrefab;
-    public bool IsRocketLaunched => rocket;
-    private Vector3 rocketPosition;
+    public bool IsRocketLaunched => rocket;   
     private GameObject rocket;
 
     void Update()
