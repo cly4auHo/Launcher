@@ -2,7 +2,6 @@
 
 public class Rocket : MonoBehaviour
 {
-
     private const float Speed = 1f;
     private Transform target;
     private Vector3 targetPosition;
