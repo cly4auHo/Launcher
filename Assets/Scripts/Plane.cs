@@ -58,15 +58,15 @@ public class Plane : MonoBehaviour
         transform.position += velocity * Time.deltaTime * speed;
     }
 
-    enum Trajectories
-    {
-        LINE,
-        SQUARE,
-        SIN
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         Destroy(gameObject);
     }
 }
+
+  public  enum Trajectories
+    {
+        LINE,
+        SQUARE,
+        SIN
+    }
